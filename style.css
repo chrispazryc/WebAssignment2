@@ -1,1 +1,60 @@
+/* Sets margin and padding for each of the elements. 
+This resets the browser defaults. Sets the 
+font family for all elements*/
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+/* Sets the background color, text color, 
+and line height for the body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Sets background color, text color, padding, and 
+alignment of the header. 
+Padding is set with rem which will match the font size of the 
+html element. (rem stands for root em) source: 
+https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
+header {
+    background-color: #0c5440;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* 'Doubles' the text size of the h1 in the header,
+however that is normal h1 text size so there is no visible change */
+header h1 {
+    font-size: 200%;
+}
+
+/* Displays list items in-line and adds margin 
+for nav in header */
+nav li {
+    display: inline-block;
+    margin: 10px;  
+}
+
+/* Removes bullets from all list items */
+li {
+    list-style-type: none;
+}
+
+/* Bolds links in nav and spaces them out */
+nav a {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Removes underline from all links 
+and has them inherit color from parent */
+a {
+    text-decoration: none;
+    color: inherit;
+}
